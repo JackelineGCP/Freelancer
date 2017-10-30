@@ -22,7 +22,7 @@
      overflow: auto;
  }
 
- .bgn{
+ .text-head{
     font-family: 'Montserrat', sans-serif; 
     margin:25px;
     font-size: 18px;
@@ -43,7 +43,7 @@
  }
 
 
- .ght{
+ .star-boot{
      color: white;
      font-family: 'Montserrat', sans-serif; 
      font-size: 30px;
@@ -55,7 +55,7 @@
     
  }
 
- .ght p{
+ .star-boot p{
     position: relative;
     top: 21px
  }
@@ -71,30 +71,130 @@
  }
  section{
      text-align: center;
+     height: 500px;
  }
 
-.element-rigth{
-    display: inline-block;
-    float: right;
-    width: 200px;
-    padding: right;     
+.element{
+    outline: 1px solid black;
+    position: relative;
+    text-align: center;
+    width: 900px;
+    height: 300px;
+    margin-left: 300px;    
+
 }
 
-.element-left{
-    display: inline-block;
-    float: left;
-    width: 200px;
-    padding: left;
+.element p:first-child{ /*alinea el 1er parrafo a la derecha */
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    width: 300px;
+    position: absolute;
 }
 
-.about .container{
-    overflow: auto;
+
+.element p:last-child{ /*alinea el 2do parrafo a la izquierda*/
+    font-family: 'Lato', sans-serif;
+    width: 300px;
+    right: 20px;
+    font-size: 23px;
+    margin-right: 100px;
+    position: absolute
+}
+
+.about button{ /*Dando alto y ancho al boton */
+    background: #18bc9c;
+    width: 212px;
+    height: 54px;
+    border-radius: 7px;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    margin-top: 10px;
+
+}
+
+.container h2{ /*Para el tamaño de la palabra about*/
+    font-size: 35px;
+    margin-top: 50px;
+}
+.container figure img{
+    margin-top: 100px;
+
 }
 
 .about{
+    font-family: 'Montserrat', sans-serif; 
     background: #18bc9c;
+    color: white;
+    height: 500px;
 }
 
+.about h2{
+    font-size: 35px;
+}
+
+.section1{
+    background: #18bc9c;
+    color: white;
+
+}
+
+.container figure figcaption{
+    font-size: 70px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif; 
+}
+.container figure p{
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-me{
+    background: white;
+    color: black;
+    height:500px ;
+    
+}
+
+.contact-me h2{
+    font-size: 35px;
+}
+.contact-me{
+    overflow: auto;
+}
+
+.form{
+    width: 450 ;
+    margin: auto;
+    color: black;
+    padding: 10px 2px;
+    box-sizing: border-box;
+    margin-top: 0;
+    border-radius: 10px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#button{
+    background: yellow;
+    color: white;
+    padding: 20px;
+}
+#button:hover{
+    cursor: pointer;
+}
+
+/*CSS footer*/
 footer{
     background: #2c3e50;
     color: white;
@@ -103,6 +203,10 @@ footer{
     text-align: center;   
 }
 
-.section1{
-    background: #18bc9c;
+.class-footer{
+    position: relative;
+     
+}
+.location around free{
+    position: absolute;
 }
