@@ -24,6 +24,11 @@
      overflow: auto;
  }
 
+ section{
+    text-align: center;   
+    padding: 20px;
+}
+
  .text-head{
     font-family: 'Montserrat', sans-serif; 
     margin:25px;
@@ -52,9 +57,7 @@
      font-weight: 600;
      display: inline-block; 
      text-transform: uppercase;
-     position: relative;
-     /*left: 90px;*/
-    
+     position: relative;   
  }
 
  .star-boot p{
@@ -71,35 +74,53 @@
      display: inline-block;
      padding: 5px;
  }
- section{
-     text-align: center;
-     height: 500px;
- }
-
-.element{
+ 
+.about .element{
     position: relative;
     text-align: center;
+    /*
     width: 900px;
     height: 300px;
-    margin-left: 300px;    
-
+    margin-left: 300px;    */
 }
-
-.element p:first-child{ /*alinea el 1er parrafo a la derecha */
+/* ------------------------------------------ */
+.element{
+    overflow: auto;
+    text-align: center;
+    padding: 50px 300px;
+}
+.text-left p{ /*alinea el 1er parrafo a la derecha */
     font-family: 'Lato', sans-serif;
     font-size: 23px;
     width: 300px;
-    position: absolute;
+    float: left;
+    text-align: justify;
 }
 
-
-.element p:last-child{ /*alinea el 2do parrafo a la izquierda*/
+.text-rigth p{ /*alinea el 2do parrafo a la izquierda*/
     font-family: 'Lato', sans-serif;
     width: 300px;
-    right: 20px;
     font-size: 23px;
-    margin-right: 100px;
-    position: absolute
+    float: right;
+    text-align: justify;
+}
+
+.boton-download{
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+}
+
+.boton-download a{  
+    text-decoration: none;
+    color: white;
+}
+
+.icon-boton{
+    border-radius: 12px;
+    padding:  10px 20px; 
+    display: inline-block;
+    border: 1px solid white;
 }
 
 .about button{ /*Dando alto y ancho al boton */
@@ -111,23 +132,18 @@
     font-size: 20px;
     border: 1px solid white;
     margin-top: 10px;
-
 }
+/* ---------------------------------------------- */
 
 .container h2{ /*Para el tamaño de la palabra about*/
     font-size: 35px;
     margin-top: 50px;
-}
-.container figure img{
-    margin-top: 100px;
-
 }
 
 .about{
     font-family: 'Montserrat', sans-serif; 
     background: #18bc9c;
     color: white;
-    height: 500px;
 }
 
 .about h2{
@@ -153,13 +169,13 @@
 .contact-me{
     background: white;
     color: black;
-    height:500px ;
-    
+    height:500px ;  
 }
 
 .contact-me h2{
     font-size: 35px;
 }
+
 .contact-me{
     overflow: auto;
 }
@@ -173,6 +189,7 @@
     margin-top: 0;
     border-radius: 10px;
 }
+
 input, textarea{
     width: 100%;
     margin-bottom: 20px;
@@ -195,19 +212,105 @@ textarea{
     cursor: pointer;
 }
 
-/*CSS footer*/
+/*para el borde de los icons*/
+.icon{
+    border: 1px solid white;
+    border-radius: 60px;
+    height:40px ;
+    width: 40px;
+    padding: 3px;    
+}
+/*para dibujar la estrella blanca*/
+.line-white::before{
+    width: 110px;
+    height: 5px;
+    content: "";
+    display: inline-block;
+    background: white;
+}
+
+.line-white::after{
+    width: 110px;
+    height: 5px;
+    content: "";
+    display: inline-block;
+    background: white;
+}
+
+i.fa fa-star{
+    position: relative;
+    padding: 7px;
+    background: #18bc9c;
+}
+/*para dibujar la linea negra*/
+.line-black::before{
+    width: 110px;
+    height: 5px;
+    content: "";
+    display: inline-block;
+    background:black;
+}
+
+.line-black::after{
+    width: 110px;
+    height: 5px;
+    content: "";
+    display: inline-block;
+    background:black;
+}
+
+i.fa fa-star{
+    position: relative;
+    padding: 7px;
+    background: white;
+}
+
+/*-------------footer---------------*/
+
 footer{
     background: #2c3e50;
     color: white;
     font-size: 30px;
-    height: 350px;
     text-align: center;   
 }
 
 .class-footer{
-    position: relative;
-     
+    column-width: 33%;
+    column-count: 3;
+    column-gap: 10px;/*para el espacio entre columnas*/
 }
-.location around free{
-    position: absolute;
+.location{
+    font-size: 25px;
+    height: 300px;
+    width: 400px;
+}
+.location p{
+    font-size: 18px;
+
+}
+
+.around{
+    height: 300px;
+    width: 400px;
+    font-size: 25px;
+}
+
+.free{
+    font-size: 25px;
+    height:300px ;
+    width:400px ;
+}
+
+.free p{
+    font-size: 18px;
+}
+
+.star-uncle a{
+    text-decoration: none;
+    color: #18bc9c;
+}
+
+.copyrigth{
+    color: white;
+    font-size: 18px;
 }
